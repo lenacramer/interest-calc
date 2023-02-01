@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link href="interestcalc.css" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator">
+        <h1 id="heading">loan calculator</h1>
+        <form id="calculator-form">
+        <label for="loan-amt"><span class="label-text">$</span><input type="text" id="loan-amt" placeholder="Loan Amount"/></label>
+        <label for="interest"><span class="label-text">%</span><input type="text" id="interest" placeholder="Interest"/></label>
+        <input type="text" class="other-input" id="years" placeholder="Years to Repay"/>
+        <input type="submit" class="other-input calculate" value="calculate"/>
+     </form>
+     <div id="loading">
+        <img id="loading-gif" src="loading-gif.gif">
+     </div>
+        <div id="output">
+            <h2>results</h2>
+            <label for="monthly-payment"><span class="output-text">monthly payment</span><input type="text" id="monthly-payment" disabled/></label>
+            <label for="total-payment"><span class="output-text">total payment</span><input type="text" id="total-payment" disabled/></label> 
+            <label for="total-interest"><span class="output-text">total interest</span><input type="text" id="total-interest" disabled/></label> 
+        </div>
+    </div>
+    <script rel="stylesheet" src="interestcalc.js"></script>
+</body>
+</html>
